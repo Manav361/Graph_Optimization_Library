@@ -1,4 +1,4 @@
-#Hungarian Algorithm
+# Hungarian Algorithm
 The Hungarian algorithm, also known as the Kuhn-Munkres algorithm or the assignment algorithm, is used to solve the assignment problem. The assignment problem involves finding the optimal assignment of a set of workers to a set of tasks while minimizing the total cost or maximizing the total profit. Here's an overview of the Hungarian algorithm:
 
 Input:
