@@ -15,17 +15,27 @@ $(u, v)$  in the path.
 
 Here is an example to demonstrate the method. We use the same flow network as above. Initially we start with a flow of 0.
 
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/aa1cd1b3-c32c-4eed-96ed-e82c57115f58)
+
+
 Flow network
 We can find the path  
 $s - A - B - t$  with the residual capacities 7, 5, and 8. Their minimum is 5, therefore we can increase the flow along this path by 5. This gives a flow of 5 for the network.
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/e542c4ac-9832-4277-882b-0860815a3cec)
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/bedb2f1a-2535-4e92-a85b-96dd7d677cea)
+
 
 First path Network after first path
 Again we look for an augmenting path, this time we find  
 $s - D - A - C - t$  with the residual capacities 4, 3, 3, and 5. Therefore we can increase the flow by 3 and we get a flow of 8 for the network.
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/5f719b47-f087-4e99-b4e3-3ea7dee7d29e)
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/802ae211-c76a-4e79-9a86-c2eafbb24407)
 
 Second path Network after second path
 This time we find the path  
 $s - D - C - B - t$  with the residual capacities 1, 2, 3, and 3, and hence, we increase the flow by 1.
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/3de1a475-7629-428b-9553-233812300951)
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/4d8687f9-5dd3-4794-b428-3c94a553945b)
 
 Third path Network after third path
 This time we find the augmenting path  
@@ -40,6 +50,8 @@ $A$ , we only send 2 and compensate this by sending an additional flow of 1 fr
 $s$  to  
 $A$ , which allows us to send an additional flow of 1 along the path  
 $D - C - t$ .
+![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/e1891d29-2f18-41aa-94de-78ee5cd2eedf)![image](https://github.com/Manav361/Graph_Optimization_Library/assets/116298483/811378a3-c932-4cc8-bc67-e25024b2fd6c)
+
 
 Fourth path Network after fourth path
 Now, it is impossible to find an augmenting path between  
