@@ -182,3 +182,6 @@ $d[t][t] < 0$ .
 
 In addition, when using the Floyd-Warshall algorithm for graphs with negative cycles, we should keep in mind that situations may arise in which distances can get exponentially fast into the negative. Therefore integer overflow must be handled by limiting the minimal distance by some value (e.g.  
 $-\text{INF}$ ).
+
+we use an optimized version of the Floyd-Warshall algorithm that only updates matrix entries when a shorter path is found, reducing unnecessary updates.
+
